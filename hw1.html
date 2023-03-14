@@ -24,29 +24,19 @@
             padding: auto;
         }
 
+        topnav ul {
+            list-style-type: none;
+        }
+
         topnav img {
             height: 25px;
             width: 25px;
             margin: 0;
             padding: 8px 8px;
-        }
-
-        .nav-left {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: left;
             vertical-align: middle;
         }
 
-        .nav-right {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: right;
-            vertical-align: middle;
-        }
-
-        /* Navbar links */
-        .nav-link {
+        .nav-bar {
             display: inline-block;
             color: #ac9e9e;
             text-align: center;
@@ -313,13 +303,12 @@
         A Shopping Website Demo
     </header>
     <topnav>
-        <span class="nav-left">
+        <ul>
+            <li><img class="nav-bar" src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1"></li>
+            <li> <a class="nav-bar" href="#NewArrivals">New Arrivals</a></li>
 
-            <img class="nav-icon-left" src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1">
-            <a class="nav-link" href="#NewArrivals">New Arrivals</a>
-
-            <span class="dropdown">
-                <a class="nav-link" href="#Bags">Bags</a>
+            <li class="dropdown">
+                <a class="nav-bar" href="#Bags">Bags</a>
                 <div class="dropdown-bg">
                     <ul class="dropdown-col1-1">
                         <li>
@@ -345,10 +334,10 @@
                         <img src="asset/dropdown_image_1.webp" alt="dp1">
                     </div>
                 </div>
-            </span>
+            </li>
 
-            <span class="dropdown">
-                <a class="nav-link" href="#Accesseries">Accesseries</a>
+            <li class="dropdown">
+                <a class="nav-bar" href="#Accesseries">Accesseries</a>
                 <ul class="dropdown-bg">
                     <ul class="dropdown-col2-1">
                         <li><a href="#">Love-on patches</a></li>
@@ -363,10 +352,10 @@
                         <img src="asset/dropdown_image_2.webp" alt="dp2">
                     </div>
                 </ul>
-            </span>
+            </li>
 
-            <span class="dropdown">
-                <a class="nav-link" href="#Experience">Experience</a>
+            <li class="dropdown">
+                <a class="nav-bar" href="#Experience">Experience</a>
                 <ul class="dropdown-bg">
                     <div class="dropdown-col3">
                         <img src="asset/dropdown_image_3.webp" alt="dp3">
@@ -375,22 +364,17 @@
                         <img src="asset/dropdown_image_4.webp" alt="dp4">
                     </div>
                 </ul>
-            </span>
+            </li>
 
-            <a class="nav-link" href="#About">About</a>
-            <a class="nav-link" href="#SummerSale">Summer Sale</a>
+            <li><a class="nav-bar" href="#About">About</a></li>
+            <li><a class="nav-bar" href="#SummerSale">Summer Sale</a></li>
 
-        </span>
-        <span class="nav-right">
-
-            <a class="nav-link" href="#Signin">Sign in</a>
-            <span class="nav-icon-right">
-                <img src="asset/shopping_bag_icon.png" alt="nav_icon2">
-                <img src="asset/search-icon.png" alt="nav_icon3">
-            </span>
+            <li class="nav-right"><a class="nav-bar" href="#Signin">Sign in</a></li>
+            <li class="nav-right"><img class="nav-bar" src="asset/shopping_bag_icon.png" alt="nav_icon2"></li>
+            <li class="nav-right"><img class="nav-bar" src="asset/search-icon.png" alt="nav_icon3"></li>
 
 
-        </span>
+        </ul>
     </topnav>
 
     <a href="#" class="top-btn">
