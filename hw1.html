@@ -21,6 +21,7 @@
             overflow: hidden;
             background-color: #333;
             width: 100%;
+            padding: auto;
         }
 
         topnav img {
@@ -31,19 +32,17 @@
         }
 
         .nav-left {
-            float: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            vertical-align: middle;
         }
 
         .nav-right {
-            float: right;
-        }
-
-        .nav-icon-left img {
-            float: left;
-        }
-
-        .nav-icon-right img {
-            float: right;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+            vertical-align: middle;
         }
 
         /* Navbar links */
@@ -79,6 +78,7 @@
             left: auto;
             right: auto;
             padding: 10px 10px;
+            vertical-align: middle;
         }
 
         .dropdown-bg a {
@@ -252,20 +252,6 @@
             padding: 0.25%;
         }
 
-        /* .bg-column4-1 .bg-hover4-1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column4-1:hover .bg-hover4-1 {
-            display: block;
-        } */
-
         .bg-column4-2 {
             position: relative;
             float: left;
@@ -319,6 +305,7 @@
             color: white;
         }
     </style>
+    <title>HW1</title>
 </head>
 
 <body>
@@ -326,87 +313,84 @@
         A Shopping Website Demo
     </header>
     <topnav>
-        <div class="nav-left">
-            <ul>
-                <span class="nav-icon-left">
-                    <img src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1">
-                </span>
-                <a class="nav-link" href="#NewArrivals">New Arrivals</a>
+        <span class="nav-left">
 
-                <span class="dropdown">
-                    <a class="nav-link" href="#Bags">Bags</a>
-                    <div class="dropdown-bg">
-                        <ul class="dropdown-col1-1">
-                            <li>
-                                <h2>
-                                    GET INSPIRED
-                                </h2>
-                            </li>
-                            <li><a href="#">Dictionary</a></li>
-                            <li><a href="#">Mild x Wild</a></li>
-                            <li><a href="#">Styled by you</a></li>
-                        </ul>
-                        <ul class="dropdown-col1-2">
-                            <li>
-                                <h2>
-                                    STYLED
-                                </h2>
-                            </li>
-                            <li><a href="#">Trend Bags</a></li>
-                            <li><a href="#">Good Bags</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-                        <div class="dropdown-col1-3">
-                            <img src="asset/dropdown_image_1.webp" alt="dp1">
-                        </div>
+            <img class="nav-icon-left" src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1">
+            <a class="nav-link" href="#NewArrivals">New Arrivals</a>
+
+            <span class="dropdown">
+                <a class="nav-link" href="#Bags">Bags</a>
+                <div class="dropdown-bg">
+                    <ul class="dropdown-col1-1">
+                        <li>
+                            <h2>
+                                GET INSPIRED
+                            </h2>
+                        </li>
+                        <li><a href="#">Dictionary</a></li>
+                        <li><a href="#">Mild x Wild</a></li>
+                        <li><a href="#">Styled by you</a></li>
+                    </ul>
+                    <ul class="dropdown-col1-2">
+                        <li>
+                            <h2>
+                                STYLED
+                            </h2>
+                        </li>
+                        <li><a href="#">Trend Bags</a></li>
+                        <li><a href="#">Good Bags</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                    <div class="dropdown-col1-3">
+                        <img src="asset/dropdown_image_1.webp" alt="dp1">
                     </div>
-                </span>
+                </div>
+            </span>
 
-                <span class="dropdown">
-                    <a class="nav-link" href="#Accesseries">Accesseries</a>
-                    <ul class="dropdown-bg">
-                        <ul class="dropdown-col2-1">
-                            <li><a href="#">Love-on patches</a></li>
-                            <li><a href="#">Travels</a></li>
-                            <li><a href="#">Add-ons</a></li>
-                            <li><a href="#">Jewelry</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-
-                        <div class="dropdown-col2-2">
-                            <img src="asset/dropdown_image_2.webp" alt="dp2">
-                        </div>
+            <span class="dropdown">
+                <a class="nav-link" href="#Accesseries">Accesseries</a>
+                <ul class="dropdown-bg">
+                    <ul class="dropdown-col2-1">
+                        <li><a href="#">Love-on patches</a></li>
+                        <li><a href="#">Travels</a></li>
+                        <li><a href="#">Add-ons</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sale</a></li>
                     </ul>
-                </span>
 
-                <span class="dropdown">
-                    <a class="nav-link" href="#Experience">Experience</a>
-                    <ul class="dropdown-bg">
-                        <div class="dropdown-col3">
-                            <img src="asset/dropdown_image_3.webp" alt="dp3">
-                        </div>
-                        <div class="dropdown-col3">
-                            <img src="asset/dropdown_image_4.webp" alt="dp4">
-                        </div>
-                    </ul>
-                </span>
+                    <div class="dropdown-col2-2">
+                        <img src="asset/dropdown_image_2.webp" alt="dp2">
+                    </div>
+                </ul>
+            </span>
 
-                <a class="nav-link" href="#About">About</a>
-                <a class="nav-link" href="#SummerSale">Summer Sale</a>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <ul>
-                <a class="nav-link" href="#Signin">Sign in</a>
-                <span class="nav-icon-right">
-                    <img src="asset/shopping_bag_icon.png" alt="nav_icon2">
-                    <img src="asset/search-icon.png" alt="nav_icon3">
-                </span>
+            <span class="dropdown">
+                <a class="nav-link" href="#Experience">Experience</a>
+                <ul class="dropdown-bg">
+                    <div class="dropdown-col3">
+                        <img src="asset/dropdown_image_3.webp" alt="dp3">
+                    </div>
+                    <div class="dropdown-col3">
+                        <img src="asset/dropdown_image_4.webp" alt="dp4">
+                    </div>
+                </ul>
+            </span>
 
-            </ul>
-        </div>
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#SummerSale">Summer Sale</a>
 
+        </span>
+        <span class="nav-right">
+
+            <a class="nav-link" href="#Signin">Sign in</a>
+            <span class="nav-icon-right">
+                <img src="asset/shopping_bag_icon.png" alt="nav_icon2">
+                <img src="asset/search-icon.png" alt="nav_icon3">
+            </span>
+
+
+        </span>
     </topnav>
 
     <a href="#" class="top-btn">
