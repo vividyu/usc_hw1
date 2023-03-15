@@ -12,7 +12,6 @@ body {
 
 /* The navbar container */
 topnav {
-    /* display: flex; */
     background-color: #333;
     width: 100%;
     padding: auto;
@@ -30,7 +29,13 @@ topnav img {
     vertical-align: middle;
 }
 
-.nav-bar {
+.nav-left {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 12px;
+}
+
+.nav-right {
     display: inline-block;
     text-align: center;
     padding: 12px 12px;
