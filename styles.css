@@ -15,10 +15,12 @@ nav {
     /* display: flex;
     position: relative; */
     background-color: white;
-    width: 97%;
+    width: 98%;
+    height: auto;
     margin: auto;
     padding: auto;
     font-size: 18px;
+    z-index: 100;
 }
 
 nav ul {
@@ -26,6 +28,7 @@ nav ul {
 }
 
 nav img {
+    overflow: hidden;
     height: 25px;
     width: 25px;
     margin: 0;
@@ -78,7 +81,7 @@ nav img {
     z-index: 1;
 
     height: 65%;
-    width: 95%;
+    width: 94%;
     top: auto;
     left: 20px;
     right: 20px;
@@ -86,8 +89,14 @@ nav img {
     margin: 20px;
     min-width: 160px;
 
-    padding: 10px;
+    padding: 30px;
     vertical-align: middle;
+}
+
+.dropdown:hover + .dropdown-bg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .dropdown-bg a:hover {
@@ -132,12 +141,6 @@ nav img {
     position: relative;
     width: auto;
     height: auto;
-}
-
-.dropdown:hover+.dropdown-bg {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .top-btn {
