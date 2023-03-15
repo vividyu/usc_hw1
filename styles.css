@@ -1,0 +1,289 @@
+header {
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+}
+
+body {
+    margin: 0px;
+}
+
+/* The navbar container */
+topnav {
+    /* display: flex; */
+    background-color: #333;
+    width: 100%;
+    padding: auto;
+}
+
+topnav ul {
+    list-style-type: none;
+}
+
+topnav img {
+    height: 25px;
+    width: 25px;
+    margin: 0;
+    padding: 3px 3px;
+    vertical-align: middle;
+}
+
+.nav-bar {
+    display: inline-block;
+    text-align: center;
+    padding: 12px 12px;
+}
+
+.nav-link {
+    color: #ac9e9e;
+    text-decoration: none;
+}
+
+/* need to show a custimized image */
+.nav-link:hover {
+    background: url("asset/line-clay-bg.svg") bottom repeat-x;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.dropdown-bg {
+    display: none;
+    position: fixed;
+    overflow: visible;
+    background-image: url("asset/dropdown_bg.jpg");
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    height: 65%;
+    width: 90%;
+    top: auto;
+    left: 30px;
+    right: 30px;
+
+    margin: 30px;
+    min-width: 160px;
+
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.dropdown-bg a:hover {
+    text-decoration: underline;
+}
+
+.dropdown-bg ul {
+    list-style-type: none;
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+.dropdown-bg h2 {
+    color: black;
+    font-family: "Audiowide", sans-serif;
+}
+
+.dropdown-bg a {
+    display: inline-block;
+    color: #ac9e9e;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.dropdown-col1-3 img {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.dropdown-col2-2 img {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.dropdown-col3 img {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.dropdown:hover+.dropdown-bg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-btn {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 50px;
+
+    background-color: rgb(11, 11, 11);
+    color: #e1d2d2;
+    opacity: 0.5;
+    border-radius: 35px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1;
+
+    font-size: 1.1em;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    display: inline-block;
+}
+
+figure img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+
+.bg-column1 {
+    width: 100%;
+    padding: 0px;
+}
+
+.bg-column2-1 {
+    position: relative;
+    float: left;
+    width: 64.61%;
+    padding: 0.25%;
+}
+
+.bg-column2-1 .bg-hover2-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.bg-column2-1:hover .bg-hover2-1 {
+    display: block;
+}
+
+.bg-column2-2 {
+    position: relative;
+    float: right;
+    width: 34.39%;
+    padding: 0.25%;
+}
+
+.bg-column2-2 .bg-hover2-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.bg-column2-2:hover .bg-hover2-2 {
+    display: block;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.bg-column3 {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 33%;
+    padding: 0.167%;
+}
+
+.bg-column3 .bg-hover3-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.bg-column3:hover .bg-hover3-2 {
+    display: block;
+}
+
+.bg-column3 .bg-hover3-3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.bg-column3:hover .bg-hover3-3 {
+    display: block;
+}
+
+.bg-column4-1 {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 29.38%;
+    padding: 0.25%;
+}
+
+.bg-column4-2 {
+    position: relative;
+    float: left;
+    height: auto;
+    width: 69.62%;
+    padding: 0.25%;
+}
+
+.bg-column4-2 .bg-hover4-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+
+.bg-column4-2:hover .bg-hover4-2 {
+    display: block;
+}
+
+/* Clear floats after image containers */
+.bg-row::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 12px;
+
+}
+
+footer a {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+
+}
+
+.priv-policy:active {
+    text-decoration: underline;
+    color: white;
+}

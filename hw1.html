@@ -2,300 +2,9 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-    <style>
-        header {
-            color: white;
-            font-size: 42px;
-            text-align: center;
-            background-color: black;
-            padding: 12px;
-        }
-
-        body {
-            margin: 0px;
-        }
-
-        /* The navbar container */
-        topnav {
-            overflow: hidden;
-            background-color: #333;
-            width: 100%;
-            padding: auto;
-        }
-
-        topnav ul {
-            list-style-type: none;
-        }
-
-        topnav img {
-            height: 25px;
-            width: 25px;
-            margin: 0;
-            padding: 8px 8px;
-            vertical-align: middle;
-        }
-
-        .nav-bar {
-            display: inline-block;
-            color: #ac9e9e;
-            text-align: center;
-            padding: 12px 12px;
-            text-decoration: none;
-        }
-
-        /* need to show a custimized image */
-        .nav-link:hover {
-            background: url("asset/line-clay-bg.svg") bottom repeat-x;
-            text-decoration: none;
-            padding-bottom: 5px;
-        }
-
-        .dropdown-bg {
-            display: none;
-            position: absolute;
-            /* background-color: #ffe5c9; */
-            background-image: url("asset/dropdown_bg.jpg");
-            /* writing-mode: horizontal-tb; */
-
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-
-            z-index: 1;
-            height: 65%;
-            width: 100%;
-            margin: auto;
-            left: auto;
-            right: auto;
-            padding: 10px 10px;
-            vertical-align: middle;
-        }
-
-        .dropdown-bg a {
-            display: inline-block;
-            color: #ac9e9e;
-            text-align: center;
-            padding: 12px 12px;
-            text-decoration: none;
-        }
-
-        .dropdown-bg a:hover {
-            text-decoration: underline;
-        }
-
-        .dropdown-bg ul {
-            list-style-type: none;
-            margin: 2%;
-            padding: 2%;
-            text-align: center;
-        }
-
-        .dropdown-bg h2 {
-            /* font-size: 40px; */
-            font-family: "Audiowide", sans-serif;
-        }
-
-        .dropdown-bg a {
-            font-size: 20px;
-            font-family: "Times New Roman", Times, serif;
-        }
-
-        .dropdown-col1-3 img {
-            position: relative;
-            width: auto;
-            height: auto;
-        }
-
-        .dropdown-col2-2 img {
-            position: relative;
-            width: auto;
-            height: auto;
-        }
-
-        .dropdown-col3 img {
-            position: relative;
-            width: auto;
-            height: auto;
-        }
-
-        .dropdown:hover .dropdown-bg {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .top-btn {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 50px;
-            background-color: rgb(11, 11, 11);
-            color: #e1d2d2;
-            opacity: 0.5;
-            border-radius: 35px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 1;
-
-            font-size: 1.1em;
-            text-align: center;
-            vertical-align: middle;
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        figure img {
-            object-fit: fill;
-            width: 100%;
-            height: auto;
-        }
-
-        .bg-column1 {
-            width: 100%;
-            padding: 0px;
-        }
-
-        .bg-column2-1 {
-            position: relative;
-            float: left;
-            width: 64.61%;
-            padding: 0.25%;
-        }
-
-        .bg-column2-1 .bg-hover2-1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column2-1:hover .bg-hover2-1 {
-            display: block;
-        }
-
-        .bg-column2-2 {
-            position: relative;
-            float: right;
-            width: 34.39%;
-            padding: 0.25%;
-        }
-
-        .bg-column2-2 .bg-hover2-2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column2-2:hover .bg-hover2-2 {
-            display: block;
-        }
-
-        /* Three image containers (use 25% for four, and 50% for two, etc) */
-        .bg-column3 {
-            position: relative;
-            float: left;
-            height: auto;
-            width: 33%;
-            padding: 0.167%;
-        }
-
-        .bg-column3 .bg-hover3-2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column3:hover .bg-hover3-2 {
-            display: block;
-        }
-
-        .bg-column3 .bg-hover3-3 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column3:hover .bg-hover3-3 {
-            display: block;
-        }
-
-        .bg-column4-1 {
-            position: relative;
-            float: left;
-            height: auto;
-            width: 29.38%;
-            padding: 0.25%;
-        }
-
-        .bg-column4-2 {
-            position: relative;
-            float: left;
-            height: auto;
-            width: 69.62%;
-            padding: 0.25%;
-        }
-
-        .bg-column4-2 .bg-hover4-2 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            text-align: center;
-            display: none;
-        }
-
-        .bg-column4-2:hover .bg-hover4-2 {
-            display: block;
-        }
-
-        /* Clear floats after image containers */
-        .bg-row::after {
-            content: "";
-            clear: both;
-            display: block;
-        }
-
-        /* .bg-row>div:hover {
-            opacity: 0.7;
-            background: rgba(255, 255, 255, 0.7);
-        } */
-
-        footer {
-            text-align: center;
-            background-color: black;
-            padding: 12px;
-        }
-
-        .priv-policy {
-            color: white;
-            font-size: 22px;
-            text-align: center;
-            vertical-align: middle;
-            text-decoration: none;
-        }
-
-        .priv-policy:active {
-            text-decoration: underline;
-            color: white;
-        }
-    </style>
     <title>HW1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -304,11 +13,13 @@
     </header>
     <topnav>
         <ul>
-            <li><img class="nav-bar" src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1"></li>
-            <li> <a class="nav-bar" href="#NewArrivals">New Arrivals</a></li>
+            <li class="nav-bar"><img src="asset/Cream_Soda_sprite_001.png" alt="nav_icon1"></li>
+            <li class="nav-bar"><a class="nav-link" href="#NewArrivals">New Arrivals</a></li>
 
-            <li class="dropdown">
-                <a class="nav-bar" href="#Bags">Bags</a>
+            <li class="nav-bar">
+                <div class="dropdown">
+                    <a class="nav-link" href="#Bags">Bags</a>
+                </div>
                 <div class="dropdown-bg">
                     <ul class="dropdown-col1-1">
                         <li>
@@ -334,10 +45,13 @@
                         <img src="asset/dropdown_image_1.webp" alt="dp1">
                     </div>
                 </div>
+
             </li>
 
-            <li class="dropdown">
-                <a class="nav-bar" href="#Accesseries">Accesseries</a>
+            <li class="nav-bar">
+                <div class="dropdown">
+                    <a class="nav-link" href="#Accesseries">Accesseries</a>
+                </div>
                 <ul class="dropdown-bg">
                     <ul class="dropdown-col2-1">
                         <li><a href="#">Love-on patches</a></li>
@@ -352,10 +66,12 @@
                         <img src="asset/dropdown_image_2.webp" alt="dp2">
                     </div>
                 </ul>
-            </li>
 
-            <li class="dropdown">
-                <a class="nav-bar" href="#Experience">Experience</a>
+            </li>
+            <li class="nav-bar">
+                <div class="dropdown">
+                    <a class="nav-link" href="#Experience">Experience</a>
+                </div>
                 <ul class="dropdown-bg">
                     <div class="dropdown-col3">
                         <img src="asset/dropdown_image_3.webp" alt="dp3">
@@ -364,16 +80,15 @@
                         <img src="asset/dropdown_image_4.webp" alt="dp4">
                     </div>
                 </ul>
+
             </li>
 
-            <li><a class="nav-bar" href="#About">About</a></li>
-            <li><a class="nav-bar" href="#SummerSale">Summer Sale</a></li>
+            <li class="nav-bar"><a class="nav-link" href="#About">About</a></li>
+            <li class="nav-bar"><a class="nav-link" href="#SummerSale">Summer Sale</a></li>
 
-            <li class="nav-right"><a class="nav-bar" href="#Signin">Sign in</a></li>
-            <li class="nav-right"><img class="nav-bar" src="asset/shopping_bag_icon.png" alt="nav_icon2"></li>
-            <li class="nav-right"><img class="nav-bar" src="asset/search-icon.png" alt="nav_icon3"></li>
-
-
+            <li class="nav-bar"><a class="nav-link" href="#Signin">Sign in</a></li>
+            <li class="nav-bar"><img src="asset/shopping_bag_icon.png" alt="nav_icon2"></li>
+            <li class="nav-bar"><img src="asset/search-icon.png" alt="nav_icon3"></li>
         </ul>
     </topnav>
 
