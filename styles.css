@@ -11,23 +11,38 @@ body {
 }
 
 /* The navbar container */
-topnav {
-    vertical-align: baseline;
-    background-color: #333;
-    width: 100%;
+nav {
+    /* display: flex;
+    position: relative; */
+    background-color: white;
+    width: 97%;
+    margin: auto;
     padding: auto;
+    font-size: 18px;
 }
 
-topnav ul {
+nav ul {
     list-style-type: none;
 }
 
-topnav img {
+nav img {
     height: 25px;
     width: 25px;
     margin: 0;
     padding: 3px 3px;
     vertical-align: middle;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.nav-left-container {
+    margin-right: auto;
+}
+
+.nav-right-container {
+    margin-left: auto;
 }
 
 .nav-left {
@@ -40,16 +55,6 @@ topnav img {
     display: inline-block;
     text-align: center;
     padding: 12px 12px;
-}
-
-.nav-left-icon {
-    display: inline-block;
-    justify-content: left;
-}
-
-.nav-right-icon {
-    display: inline-block;
-    justify-content: right;
 }
 
 .nav-link {
