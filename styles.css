@@ -162,6 +162,51 @@ figure img {
     height: auto;
 }
 
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+    background: white;
+    width: 70%;
+    height: 70%;
+    transition: .5s ease;
+    opacity: 0;
+    padding: 20px;
+}
+
+.overlay-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    bottom: 0%;
+    text-align: center;
+    vertical-align: bottom;
+
+    color: black;
+    font-size: 28px;
+}
+
+.bg-column2-1:hover .overlay {
+    opacity: 0.5;
+}
+
+.bg-column2-2:hover .overlay {
+    opacity: 0.5;
+}
+
+.bg-column3:hover .overlay {
+    opacity: 0.5;
+}
+
+.bg-column4-2:hover .overlay {
+    opacity: 0.5;
+}
+
 .bg-column1 {
     width: 100%;
     padding: 0px;
